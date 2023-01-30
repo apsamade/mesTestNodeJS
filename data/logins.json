@@ -1,0 +1,44 @@
+[
+    {
+        "pseudo": "mobpsycho 100",
+        "mdp": "10/10",
+        "photo": "https://fr.web.img2.acsta.net/pictures/20/11/12/14/25/3371142.jpg",
+        "id": "1"
+    },
+    {
+        "pseudo": "slam dunk",
+        "mdp": "11/10",
+        "photo": "https://m.media-amazon.com/images/I/81XBJdTuRKL.jpg",
+        "id": "2"
+    },
+    {
+        "pseudo": "vinland saga",
+        "mdp": "10/10",
+        "photo": "https://fr.web.img4.acsta.net/pictures/19/09/16/17/09/4903250.jpg",
+        "id": "3"
+    },
+    {
+        "pseudo": "dragon ball",
+        "mdp": "papa",
+        "photo": "https://static.cnews.fr/sites/default/files/dragon_ball_arrive_enfin_en_streaming_en_france_637ce1a2326ae.jpg",
+        "id": "4"
+    },
+    {
+        "pseudo": "my hero academia",
+        "mdp": "9.5/10",
+        "photo": "https://fr.web.img5.acsta.net/pictures/21/02/16/12/45/5319199.jpg",
+        "id": "5"
+    },
+    {
+        "pseudo": "one piece",
+        "mdp": "9/10",
+        "photo": "https://fr.web.img5.acsta.net/pictures/19/08/09/14/53/1842996.jpg",
+        "id": "6"
+    },
+    {
+        "pseudo": "jujutsu kaisen",
+        "mdp": "10/10",
+        "photo": "https://fr.web.img3.acsta.net/pictures/20/09/14/10/31/4875617.jpg",
+        "id": "0.5095927571693597"
+    }
+]

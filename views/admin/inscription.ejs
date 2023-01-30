@@ -1,0 +1,26 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="./css/inscription.css">
+</head>
+<body>
+
+    <%- include('../includes/nav.ejs') %>
+    
+    <header>
+        <h1>League Of Legends</h1>
+
+        <form action="/inscription" method="POST">
+            <input type="text" name="pseudo" id="pseudo" placeholder="Pseudo">
+            <input type="password" name="mdp" id="mdp" placeholder="Mot de passe">
+            <input type="text" name="photo" id="photo" placeholder="Lien de votre photo">
+            <input type="submit">
+        </form>
+        <img id="ok" style="
+            width: 400px;
+            position: absolute;
+            bottom: 0;
+            z-index: 0;
+            left: 150px;"
+            src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt81d4f3afc6931dfe/5f4def524a7bbc279b844b98/champion_overview_jinx_og.png" alt="jinx">
+    </header>
+    
+    <%- include('../includes/end.ejs') %>

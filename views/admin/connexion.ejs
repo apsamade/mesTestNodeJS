@@ -1,0 +1,23 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="./css/connexion.css">
+</head>
+<body>
+
+    <%- include('../includes/nav.ejs') %>
+    
+<header>
+        <h1>Connexion To League Of Legends</h1>
+
+        <form action="/connexion" method="POST">
+            <input type="text" name="pseudo">
+            <input type="text" name="password">
+            <input type="submit">
+        </form>
+        <div>
+            <img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt3efee145a07dc9a7/5f4defe82931d5251031459e/Champion_ashe_HP.png" alt="Ashe">
+            <img src="https://i.pinimg.com/originals/14/f7/c2/14f7c2f23ebfc9887cb4f2a3722cd26b.png" alt="Volibear">
+        </div>
+        
+    </header>
+    
+    <%- include('../includes/end.ejs') %>

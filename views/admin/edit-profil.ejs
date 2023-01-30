@@ -1,0 +1,35 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="./css/profil.css">
+</head>
+<body>
+    <%- include('../includes/nav.ejs') %>
+
+    <header>
+
+        <!-- //////// mon header d'affichage des produits -->
+        <h1>Edit page</h1>
+        <% if(log.length == 0){%>
+            <h3 class="spe">Aucun profil créer</h3>
+        <% }else{ %>
+            <section>
+            <% for(let login of log){ %>
+                <div class="ds">
+                    <p style="z-index: 1000;">Bienvenue <%= login.pseudo %></p>
+                    <img style="max-width: 300px; max-height: 300px; min-width: 150px; min-height: 150px;" src="<%= login.photo %>" alt="image profil">
+                    <p style="z-index: 1000; margin: 25px;">Mot de passe : <%= login.mdp %></p>
+                    <footer>
+                        <a class="but" href="/edit">Modifier</a>
+                        <form action="/supprimer-un-produit/<%= login.id %>" method="post">
+                            <button type="submit" class="but">Supprimer</button>
+                        </form>
+                    </footer>  
+                </div>
+            <% } %>
+            </section>
+        <% } %>
+    </header>
+        <!-- ///////// mes bouttons supprimer ett modifier -->
+        
+    <%- include('../includes/end.ejs') %>
+
+

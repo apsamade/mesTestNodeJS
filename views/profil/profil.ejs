@@ -1,0 +1,29 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="./css/profil.css">
+</head>
+<body>
+    <%- include('../includes/nav.ejs') %>
+
+    <header>
+        <h1>Welcolm To summonersrift</h1>
+        <% if(log.length == 0){%>
+            <h3 class="spe">Aucun profil créer</h3>
+        <% }else{ %>
+            <section>
+            <% for(let login of log){ %>
+                <div class="ds">
+                    <p style="z-index: 1000;">Bienvenue <%= login.pseudo %></p>
+                    <img style="max-width: 300px; max-height: 300px; min-width: 150px; min-height: 150px;" src="<%= login.photo %>" alt="image profil">
+                    <div>
+                        <p style="z-index: 1000; margin: 25px;">Mot de passe : <%= login.mdp %></p>
+                        <a href="/profil/<%= login.id %>" class="det">Détails ...</a>
+                    </div>
+                    
+                </div>
+            <% } %>
+            </section>
+        <% } %>
+        
+        <a class="but" href="/inscription">Retourner à l'inscription</a>
+    </header>
+    <%- include('../includes/end.ejs') %>
